@@ -1,0 +1,139 @@
+.showModal{
+    animation: show_modal 0.3s linear forwards;
+}
+@keyframes show_modal{
+    0%{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(auto);
+        opacity: 1;
+    }
+}
+#followUp_modal_cover > #followUp_modal{
+    max-width: 1170px;
+    height: 684px;
+    margin: 25px auto;
+    background-color: #fff;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.16);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_header{
+    width: 1170px;
+    height: 33px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dadce0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#followUp_modal_cover > #followUp_modal > .modal_header > .modal_title{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Mitra;
+    margin-right: 30px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_header > #followUp_modal_close{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    background-image: url(../../images/icon/close_icon.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content{
+    width: 100%;
+    height: calc(100% - 83px);
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight{
+    width: 42%;
+    height: 449px;
+    padding: 0 15px;
+    margin-top: 72px;
+    font-family: Mitra;
+    font-size: 24px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_description_container{width: 100%;height: 161px;}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_description_container > .modal_title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 15px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_description_container > .modal_description{
+    margin: 0;
+    font-weight: 400;
+    padding-right: 15px;
+    color: #383838;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_form_container{
+    width: 100%;
+    height: 216px;
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    row-gap: 30px;
+    flex-flow: row wrap;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_form_container > .modal_form_style{
+    border: 1px solid #cac8c8;
+    outline: none;
+    border-radius: 8px;
+    font-family: Mitra;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_form_container > #form_text_modal{
+    width: 261px;
+    height: 30px;
+    padding: 9px 18px;
+    font-size: 22px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_form_container > #form_phone_modal{
+    width: 236px;
+    height: 35px;
+    padding: 9px 6px 4px 55px;
+    font-size: 18px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_form_container > #btnSearch_modal{
+    width: 271px;
+    height: 44px;
+    padding: 0 14px;
+    background-color: #005792;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 8px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_form_container > #btnSearch_modal:hover{
+    background-color: #ff5e3a;
+    cursor: pointer;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partLeft{
+    width: 50%;
+    height: 502px;
+    padding: 0 15px;
+    margin-top: 72px;
+}
+#followUp_modal_cover > #followUp_modal > .modal_content > .partLeft > img{width: 100%; height: 100%;}
+
+/* Responsive */
+@media screen and (max-width:1210px) {
+    #followUp_modal_cover > #followUp_modal {width: 90%;}
+    #followUp_modal_cover > #followUp_modal > .modal_header {width: 90%;}
+}
+@media screen and (max-width:886px) {
+    #followUp_modal_cover > #followUp_modal > .modal_content > .partRight > .modal_description_container > .modal_description {display: none;}
+}
+@media screen and (max-width:680px) {
+    #followUp_modal_cover > #followUp_modal > .modal_content > .partLeft {display: none;}
+    #followUp_modal_cover > #followUp_modal > .modal_content > .partRight {width: 90%;}
+}

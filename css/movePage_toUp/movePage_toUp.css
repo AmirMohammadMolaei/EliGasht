@@ -1,0 +1,17 @@
+#movePage_toUp_btn{
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: #005792;
+    right: 30px;
+    top: 650px;
+    transition: 0.4s;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-image: url(../../images/icon/moveToup_icon.png);
+    display: none;
+    z-index: 1000;
+}
+#movePage_toUp_btn:hover{background-color: #024673; cursor: pointer;}

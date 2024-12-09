@@ -1,0 +1,31 @@
+#animate_menu{
+    width: 96px;
+    height: 486px;
+    position: fixed;
+    right: 0;
+    top: 140px;
+    z-index: 999;
+    color: #525658;
+}
+#animate_menu > .animate_menu_items{
+    width: 100%;
+    height: 81px;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 18px;
+    line-height: 120px;
+}
+#airplane_ticket{background-image: url(../../images/icon/airplane_tiket.png); background-size: 32px; background-position: 50% 30%;}
+#hotel_ticket{background-image: url(../../images/icon/hotel_tiket.png); background-size: 30px; background-position: 50% 30%;}
+#tor_ticket{background-image: url(../../images/icon/tor_tiket.png); background-size: 30px; background-position: 55% 30%;}
+#package_ticket{background-image: url(../../images/icon/package_tiket.png); background-size: 35px; background-position: 60% 30%;}
+#train_ticket{background-image: url(../../images/icon/train_tiket.png); background-size: 25px; background-position: 50% 30%;}
+#bime_ticket{background-image: url(../../images/icon/bime_tiket.png); background-size: 30px; background-position: 50% 30%;}
+#animate_menu > .animate_menu_items:hover{
+    background-color: #00000011;
+    cursor: pointer;
+}
+/* remove the menu */
+@media screen and (max-width: 1519px) {
+    #animate_menu{display: none;}
+}

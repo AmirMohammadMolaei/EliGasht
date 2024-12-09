@@ -1,0 +1,63 @@
+#coverMenu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #00000086;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    cursor: default;
+    transition: 0.5s;
+}
+#coverMenu > #menu_header{
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    padding-top: 75px;
+    transition: 0.3s;
+}
+#menu_header > #close_menu{
+    width: 32px;
+    height: 38px;
+    background-image: url(../../images/icon/close_icon.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 12px;
+    top: 16px;
+    padding: 1px 4px;
+    cursor: pointer;
+}
+#menu_header > .boxMenu_header{
+    width: 100%;
+    height: 456px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu_header > .boxMenu_header > .boxMenu_items{
+    width: 100%;
+    height: 33px;
+    padding: 11px 0;
+    line-height: 33px;
+    text-indent: 60px;
+    font-size: 22px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#menu_header > .boxMenu_header > .boxMenu_items:hover{background-color: #00000026;}
+/* for icon meni that in the header */
+#airplane_ticket_headerMenu{background-image: url(../../images/icon/airplane_tiket.png); background-size: 34px; background-position: 92% 50%;}
+#hotel_ticket_headerMenu{background-image: url(../../images/icon/hotel_tiket.png); background-size: 32px; background-position: 94% 50%;}
+#tor_ticket_headerMenu{background-image: url(../../images/icon/tor_tiket.png); background-size: 32px; background-position: 94% 50%;}
+#package_ticket_headerMenu{background-image: url(../../images/icon/package_tiket.png); background-size: 33px; background-position: 94% 50%;}
+#train_ticket_headerMenu{background-image: url(../../images/icon/train_tiket.png); background-size: 22px; background-position: 91% 50%;}
+#bime_ticket_headerMenu{background-image: url(../../images/icon/bime_tiket.png); background-size: 30px; background-position: 94% 50%; border-bottom: 1px solid #cecece;}
+#torist_headerMenu{background-image: url(../../images/icon/tourism_icon.png); background-size: 22px; background-position: 92% 50%;}
+#help_headerMenu{background-image: url(../../images/icon/help_icon.png); background-size: 22px; background-position: 92% 50%; border-bottom: 1px solid #cecece;}

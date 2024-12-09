@@ -1,0 +1,189 @@
+#content > #side{color: #465280;}
+#content > #side > .filter{
+    width: 100%;
+    border-bottom: 1px solid #6c757d;
+}
+#content > #side > .filter > input{display: none;}
+#content > #side > .filter > input:checked ~ #stop_inFly{height: 0;}
+#content > #side > .filter > input:checked ~ #classFly{height: 0;}
+#content > #side > .filter > input:checked ~ #typeTicket_fly{height: 0;}
+#content > #side > .filter > input:checked ~ #moveTime_fly{height: 0;}
+#content > #side > .filter > input:checked ~ #airplane_companys{height: 0;}
+#content > #side > .filter:nth-child(1){
+    margin-top: 35px;
+}
+#content > #side > .filter > .title{
+    width: 100%;
+    height: 18px;
+    display: block;
+    line-height: 18px;
+    font-size: 24px;
+    text-align: right;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#content > #side > .filter > .framework_filter{
+    width: 100%;
+    transition: 0.4s;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    flex-flow: row wrap;
+}
+#content > #side > .filter > #stop_inFly{height: 114px;}
+#content > #side > .filter > #classFly{height: 193.2px;}
+#content > #side > .filter > #typeTicket_fly{height: 96.6px;}
+#content > #side > .filter > #moveTime_fly{height: 193.2px;}
+#content > #side > .filter > #airplane_companys{height: 304px;}
+#content > #side > .filter > .framework_filter > .cover_framework_filter{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: start;
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: 75px;
+    position: relative;
+}
+#content > #side > .filter > .framework_filter > .cover_framework_filter > input{
+    appearance: none;
+    width: 24px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+#content > #side > .filter > .framework_filter > .cover_framework_filter > .company_price{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: Mitra;
+}
+#content > #side > .filter > .framework_filter > .cover_framework_filter > .company_logo{
+    width: 20px;
+    height: 100%;
+    margin-left: 5px;
+}
+#content > #side > .filter > .framework_filter > .cover_framework_filter > .company_logo > img{width: 100%; height: 100%;}
+#content > #side > .filter > .framework_filter > .cover_framework_filter > input:checked{
+    background-color: blue;
+}
+#content > #side > .filter > .framework_filter > .cover_framework_filter > input:checked::before{
+    content: '\2713';
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bolder;
+    position: absolute;
+    left: 4px;
+    top: -30px;
+    transition: 0.1s;
+    animation: check 0.1s forwards linear;
+}
+@keyframes check{
+    0%{top: -30px;}
+    100%{top: 0px;}
+}
+#content > #side > .filter > .framework_filter > .cover_framework_filter > .filter_items_check{
+    font-size: 19px;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+#content > #side > .filter > .framework_filter > #bg_noStop{background-image: url(../../images/icon/no_stopIcon.png);}
+#content > #side > .filter > .framework_filter > #bg_oneStop{background-image: url(../../images/icon/one_stopIcon.png);}
+#content > #side > .filter > .framework_filter > #bg_twoStop{background-image: url(../../images/icon/two_stopIcon.png);}
+#content > #side > .filter > .framework_filter > .style_filter_inSide{
+    width: 43%;
+    height: 80px;
+    margin: 0 0 15px 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+    color: #465280;
+}
+#content > #side > .filter > .framework_filter > .style_filter_inSide > .name_filter_box,
+#content > #side > .filter > .framework_filter > .style_filter_inSide > .time_box{
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    text-align: center;
+}
+#content > #side > .filter > .framework_filter > .style_filter_inSide > .time_box{
+    font-size: 14px;
+    bottom: 0;
+}
+#content > #side > .filter > .framework_filter > input{display: none;}
+#content > #side > .filter > .framework_filter > .style_filter_inSide:hover{background-color: #d5d5f1;}
+#content > #side > .filter > .framework_filter > input:checked + .style_filter_inSide{background-color: #188ae2;}
+#content > #side > .filter > .framework_filter > input:checked + .style_filter_inSide > .name_filter_box,
+#content > #side > .filter > .framework_filter > input:checked + .style_filter_inSide > .time_box{color: #fff;}
+#content > #side > .filter > .framework_filter > #economy_class{
+    background-image: url(../../images/icon/akonomeClass.png);
+    background-size: 20px;
+}
+#content > #side > .filter > .framework_filter > #business_class{
+    background-image: url(../../images/icon/besinessClass.png);
+    background-size: 25px;
+}
+#content > #side > .filter > .framework_filter > #first_class{
+    background-image: url(../../images/icon/firstClass.png);
+    background-size: 25px;
+}
+#content > #side > .filter > .framework_filter > #charter_class{
+    background-image: url(../../images/icon/charter.png);
+    background-size: 40px;
+}
+#content > #side > .filter > .framework_filter > #systemy_class{
+    background-image: url(../../images/icon/systemy.png);
+    background-size: 30px;
+}
+#content > #side > .filter > .framework_filter > #midnight_class{
+    background-image: url(../../images/icon/midnight.png);
+    background-size: 30px;
+}
+#content > #side > .filter > .framework_filter > #mornning_class{
+    background-image: url(../../images/icon/morning.png);
+    background-size: 30px;
+}
+#content > #side > .filter > .framework_filter > #afternoon_class{
+    background-image: url(../../images/icon/afternoon.png);
+    background-size: 30px;
+}
+#content > #side > .filter > .framework_filter > #night_class{
+    background-image: url(../../images/icon/night.png);
+    background-size: 30px;
+}
+/* checked */
+#content > #side > .filter > .framework_filter > input:checked + #economy_class{background-image: url(../../images/icon/economy_class_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #business_class{background-image: url(../../images/icon/business_class_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #first_class{background-image: url(../../images/icon/first_class_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #charter_class{background-image: url(../../images/icon/charter_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #systemy_class{background-image: url(../../images/icon/systemy_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #midnight_class{background-image: url(../../images/icon/midnight_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #mornning_class{background-image: url(../../images/icon/morning_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #afternoon_class{background-image: url(../../images/icon/afternoon_checked.png);}
+#content > #side > .filter > .framework_filter > input:checked + #night_class{background-image: url(../../images/icon/night_checked.png);}
+
+/* Responsive */
+
+@media screen and (max-width: 1010px) {
+    #content > #side > .filter > .framework_filter > .style_filter_inSide {margin-left: 5px;}
+}
+@media screen and (max-width: 900px) {
+    #content > #side > .filter > .framework_filter > .style_filter_inSide > .name_filter_box{font-size: 16px;}
+    #content > #side > .filter > .title {font-size: 18px;}
+}

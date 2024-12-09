@@ -1,0 +1,345 @@
+#content > #main > #searchBox{
+    width: 100%;
+    height: 134px;
+    margin: 20px 0 30px 0;
+    color: #212529;
+}
+#content > #main > #searchBox > .filter_in_search{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    column-gap: 5px;
+    font-family: Roya;
+}
+#content > #main > #searchBox > .filter_in_search > div{
+    height: 25px;
+    text-align: right;
+    font-size: 22px;
+    line-height: 25px;
+    padding: 10px 15px 10px 30px;
+    border-radius: 10px;
+    background-image: url(../../images/icon/acardeon_icon.png);
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    position: relative;
+}
+#content > #main > #searchBox > .filter_in_search > div:hover{background-color: #005fc563; cursor: pointer;}
+#content > #main > #searchBox > .filter_in_search > #passengers_toolbar{overflow: hidden;}
+#content > #main > #searchBox > .filter_in_search > #passengers_toolbar > #passengers_toolbar_containerMenu{
+    width: 245px;
+    height: 262px;
+    padding: 25px 25px;
+    margin: 10px auto;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    z-index: 200;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+    row-gap: 25px;
+    list-style: none;
+    display: none;
+}
+#passengers_toolbar_containerMenu > .containerMenu_items{
+    width: 100%;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+#passengers_toolbar_containerMenu > .containerMenu_items > .rangeSet{
+    width: 95px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+#passengers_toolbar_containerMenu > .containerMenu_items > .rangeSet > div{width: 100%; height: 100%;}
+#passengers_toolbar_containerMenu > .containerMenu_items > .rangeSet > .ChangeCounter{
+    border-radius: 4px;
+    color: #005792;
+    background-color: #e8f0fe;
+    line-height: 30px;
+    text-align: center;
+    font-size: 54px;
+}
+#passengers_toolbar_containerMenu > .containerMenu_items > .rangeSet > .passengerValue{
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-family: Roya;
+}
+#passengers_toolbar_containerMenu > .containerMenu_items:nth-child(1){height: 30px;}
+#registrationBtn_passengerToolbar{color: #4285f4; right: 200px;}
+#CancelBtn_passengerToolbar{color: rgba(0,0,0,.56); right: 120px;}
+#passengers_toolbar > .btnStyle{
+    width: 38px;
+    height: 32px;
+    padding: 0 21px;
+    margin: 6px 0;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    z-index: 300;
+    top: 250px;
+}
+#passengers_toolbar > .btnStyle:hover{background-color: rgba(0, 0, 0, 0.12); cursor: pointer;}
+.searchToolbar_containerMenu{
+    width: 200px;
+    height: 138px;
+    margin: 10px auto;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: absolute;
+    box-shadow: 1px 1px 14px rgba(0,0,0,.2);
+    line-height: 36px;
+    right: 0;
+    top: -10px;
+    z-index: 200;
+    display: none;
+}
+.searchToolbar_containerMenu > input[type="radio"]{display: none;}
+.searchToolbar_containerMenu > label{
+    width: 100%;
+    height: 36px;
+    padding: 5px 70px 5px 5px;
+    cursor: pointer;
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.searchToolbar_containerMenu > input[type="radio"]:checked + label{background-image: url(../../images/icon/chek_icon.png);}
+.searchToolbar_containerMenu > label:hover{
+    background-color: #f3f5f7;
+    color: #234;
+}
+#passengers_toolbar_containerMenu > #textWarn.containerMenu_items{
+    color: red;
+    font-size: 18px;
+    height: 30px;
+    margin-bottom: 25px;
+}
+#content > #main > #searchBox > .main_search{
+    width: 100%;
+    height: 84px;
+    margin: 5px 0 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(60,64,67,.15);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#searchBox > .main_search > #chooseCity{
+    width: 90%;
+    height: 64px;
+    border-left: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    padding: 10px;
+    position: relative;
+}
+#searchBox > .main_search > #chooseCity > .nameBox_chooseCity{
+    width: 50%;
+    height: 35px;
+    padding: 13px 0;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    position: relative;
+    cursor: pointer;
+    line-height: 35px;
+    display: flex;
+    font-size: 22px;
+}
+#searchBox > .main_search > #chooseCity > .nameBox_chooseCity > #defaultValue_firstCity{
+    position: absolute;
+    right: 20px;
+}
+#searchBox > .main_search > #chooseCity > .nameBox_chooseCity > #defaultValue_lastCity{
+    position: absolute;
+    right: 40px;
+}
+#searchBox > .main_search > #chooseCity > .nameBox_chooseCity > #firstCity_value{
+    width: 100%;
+    height: 100%;
+    text-indent: 20px;
+    border: none;
+}
+#searchBox > .main_search > #chooseCity > .nameBox_chooseCity > #lastCity_value{
+    width: 100%;
+    height: 100%;
+    text-indent: 40px;
+    border: none;
+}
+#searchBox > .main_search > #chooseCity > .nameBox_chooseCity > .createIcon{
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #dadce0;
+}
+#searchBox > .main_search > #chooseCity > #firstCity > .createIcon{
+    border-radius: 0 40px 40px 0;
+    left: 0;
+}
+#searchBox > .main_search > #chooseCity > #lastCity > .createIcon{
+    border-radius: 40px 0 0 40px;
+    right: 0;
+}
+#searchBox > .main_search > #chooseCity > #reversCity_btn{
+    width: 46px;
+    height: 41px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 24px;
+    background-image: url(../../images/icon/reverse_icon.png);
+    background-position: 50%;
+    background-size: 17px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#searchBox > .main_search > #searchBtn{
+    width: 12%;
+    height: 100%;
+    background-color: #ff5e3a;
+    color: #fff;
+    text-align: center;
+    line-height: 84px;
+    font-size: 32px;
+    transition: 0.3s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#searchBox > .main_search > #searchBtn:hover{
+    background-color: #005792;
+    cursor: pointer;
+}
+
+#searchBox > .main_search > #searchBoxmenu{
+    width: 375px;
+    height: 535px;
+    background-color: #fff;
+    color: #212529;
+    z-index: 200;
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,11,38,.24);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    display: none;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_search{
+    width: 343px;
+    height: 43px;
+    padding: 16px;
+    border-bottom: 1px solid #dadce0;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_search > #searhBoxinput{
+    width: 306px;
+    height: 31px;
+    border: none;
+    outline: none;
+    padding: 1px 35px 1px 2px;
+    margin: 5px 0;
+    font-size: 28px;
+    color: #000;
+    font-family: Mitra;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_search > #back_searchBtn{
+    width: 26px;
+    height: 30px;
+    background-image: url(../../images/icon/arrow_search.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    cursor: pointer;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_search > #back_searchBtn:hover{background-image: url(../../images/icon/arrow_searchHover.png);}
+#searchBox > .main_search > #searchBoxmenu > .componet_search > #delete_searchBtn{
+    width: 26px;
+    height: 30px;
+    background-image: url(../../images/icon/deleteText_search.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 26px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    cursor: pointer;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_menu{
+    width: 100%;
+    height: calc(100% - 43px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: scroll;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_menu > .menuItems{
+    width: 290px;
+    height: 26px;
+    color: #465280;  
+    padding: 6px 49px 13px 20px;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    background-image: url(../../images/icon/airplaneIcon.png);
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    direction: ltr;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_menu > .menuItems:hover{background-color: #f0f6ff; cursor: pointer;}
+#searchBox > .main_search > #searchBoxmenu > .componet_menu > .menuItems > .city{
+    height: 100%;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+#searchBox > .main_search > #searchBoxmenu > .componet_menu > .menuItems > .airport{
+    height: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    display: block;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
+    #searchBox > .main_search > #searchBtn {font-size: 25px;}
+    
+}
+@media screen and (max-width: 788px) {
+    #searchBox > .main_search > #chooseCity > .nameBox_chooseCity {font-size: 19px;}
+    #searchBox > .main_search > #searchBtn {font-size: 19px;}
+    #searchBox > .main_search > #chooseCity > .nameBox_chooseCity > #defaultValue_firstCity {right: 5px;}
+    #content > #main > #searchBox > .filter_in_search > div {font-size: 18px;}
+}
+@media screen and (max-width: 500px) {
+    #searchBox > .main_search > #chooseCity > .nameBox_chooseCity {font-size: 16px;}
+    #searchBox > .main_search > #chooseCity > .nameBox_chooseCity > #defaultValue_lastCity {right: 25px;}
+
+}
+@media screen and (max-width: 440px) {
+    #searchBox > .main_search > #searchBtn > #rotateSearchbtn{
+        transform: rotate(-90deg);
+        position: absolute;
+        left: 0px;
+    }
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eligasht</title>
+    <link rel="stylesheet" href="css/eligashtStyle.css">
+    <link rel="stylesheet" href="css/slider/slider_airplaneTicket_css.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/menu_in_header/menuInheader.css">
+    <link rel="stylesheet" href="css/modal_followUp/followUpmodal.css">
+    <link rel="stylesheet" href="css/animate_menu/animateMenu.css">
+    <link rel="stylesheet" href="css/searchBox/searchBox.css">
+    <link rel="stylesheet" href="css/sortBox/sortBox.css">
+    <link rel="stylesheet" href="css/tickets_airplane/airplaneTickets.css">
+    <link rel="stylesheet" href="css/filter_in_side/filter_in_side.css">
+    <link rel="stylesheet" href="css/ad/ad.css">
+    <link rel="stylesheet" href="css/content/content.css">
+    <link rel="stylesheet" href="css/modal_logIn/modalLogin.css">
+    <link rel="stylesheet" href="css/NoResultFound_css/NoResultFound.css">
+    <link rel="stylesheet" href="css/modal_css/modal.css">
+    <link rel="stylesheet" href="css/modal_informationFly/modalInformationfly.css">
+    <link rel="stylesheet" href="css/movePage_toUp/movePage_toUp.css">
+    <link rel="stylesheet" href="css/myTickets_css/myTicket.css">
+    <link rel="stylesheet" href="css/darkMood_css/darkMood.css">
+    <!-- Web Icon -->
+    <link rel="website icon" type="png" href="images/icon/webSite_icon.png">
+    <style>html {scroll-behavior: smooth;}</style>
+</head>
+<body id="webBody">
+    <!-- Header -->
+    <div id="header">
+        <div class="partRight">
+            <div id="showMenu_header"></div>
+            <!-- menu in header -->
+            <div id="coverMenu">
+                <div id="menu_header">
+                    <div id="close_menu"></div>
+                    <ul class="boxMenu_header">
+                        <li class="boxMenu_items" id="airplane_ticket_headerMenu">بلیط هواپیما</li>
+                        <li class="boxMenu_items" id="hotel_ticket_headerMenu">رزرو هتل</li>
+                        <li class="boxMenu_items" id="tor_ticket_headerMenu">تور مسافرتی</li>
+                        <li class="boxMenu_items" id="package_ticket_headerMenu">پکیج مسافرتی</li>
+                        <li class="boxMenu_items" id="train_ticket_headerMenu">بلیط قطار</li>
+                        <li class="boxMenu_items" id="bime_ticket_headerMenu">بیمه مسافرتی</li>
+                        <li class="boxMenu_items" id="torist_headerMenu">مجله گردشگری</li>
+                        <li class="boxMenu_items" id="help_headerMenu">راهنما</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="images/icon/eligasht-text-logo.webp">
+            </div>
+            <!-- Dark Mood -->
+            <div id="changeType_mood">
+                <span id="typeMood">روز</span>
+                <div id="typeSwitchto"></div>
+            </div>
+        </div>
+        <div class="partLeft">
+            <div id="followUp">پیگیری خرید</div>
+            <div id="logIn">ورود </div>
+            <div id="myTicket">بلیت های من
+                <span id="newAddticket"></span>
+            </div>
+        </div>
+    </div>
+    <!-- myTicket modal -->
+    <div id="myTicket_modal_cover" class="modalCover">
+        <div id="myTicket_modal">
+            <div class="hearder_modal">
+                <span>بلیت های من</span>
+                <div id="closeBtn_myTicket_modal"></div>
+            </div>
+            <div class="content_modal">
+                <div class="search_modal">
+                    <input type="text" name="Search" id="searchIn_myticketModal" placeholder="جستجو...">
+                </div>
+                <div id="holder_modal"></div>
+            </div>
+        </div>
+    </div>
+    <!-- followUp modal -->
+    <div id="followUp_modal_cover" class="modalCover">
+        <div id="followUp_modal">
+            <div class="modal_header">
+                <span class="modal_title">پیگیری بلیط هواپیما و اطلاعات خرید</span>
+                <div id="followUp_modal_close"></div>
+            </div>
+            <div class="modal_content">
+                <div class="partRight">
+                    <div class="modal_description_container">
+                        <h2 class="modal_title">پیگیری خرید با شماره قرارداد یا نام خانوادگی</h2>
+                        <p class="modal_description">
+                            برای دریافت اطلاعات قرارداد، بلیط هواپیما ، واچر هتل ، بیمه نامه مسافرتی و سایر اطلاعات سفر
+                            خود می توانید فرم ذیل را تکمیل و پس از دریافت کد تایید روی شماره موبایل خود وارد صفحه مشخصات
+                            قرارداد شوید.
+                        </p>
+                    </div>
+                    <div class="modal_form_container">
+                        <input type="text" name="modal_form" id="form_text_modal"
+                            placeholder="نام خانوادگی یا شماره قرارداد" class="modal_form_style">
+                        <input type="text" name="modal_form" id="form_phone_modal" placeholder="09120000000"
+                            class="modal_form_style">
+                        <div id="btnSearch_modal">جستجو</div>
+                    </div>
+                </div>
+                <div class="partLeft"><img style="border-radius: 10px;" src="images/icon/contract.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <!-- logIn modal -->
+    <div id="modalCover_logIn" class="modalCover">
+        <div id="logIn_modal">
+            <div class="modal_header">
+                <div id="logIn_modal_closeBtn"></div>
+            </div>
+            <div class="logIn_modal_container">
+                <div class="tab">
+                    <!-- a => Arrival -->
+                    <input type="radio" name="logInmodal" id="a1" checked>
+                    <label for="a1" id="passengerArrival">ورود / ثبت نام مسافر</label>
+                    <input type="radio" name="logInmodal" id="a2">
+                    <label for="a2" id="agencyArrival">ورود آژانس</label>
+                </div>
+                <div id="titleBox_logInmodal"></div>
+                <input type="text" id="loginBox_inModal" class="input_login">
+                <div id="nextStep">گام بعدی</div>
+            </div>
+        </div>
+    </div>
+    <!-- information modal -->
+    <div id="modalCover_information" class="modalCover">
+        <div id="closeBtn_informationFly"></div>
+        <div class="informationCountainer" id="informationCountainerModal">
+            <!-- Warn -->
+            <div id="textWarn_ticket">این بلیت را شما قبلا <span>خریداری</span> کردید!</div>
+
+            <div id="modal_information">
+                <div class="modal_header">
+                    <div class="title">
+                        <div class="logoAirplane" id="logoAirplane_modal"></div>
+                        <span class="nameAirplane" id="nameAirplane_modal">ایر عربیا (سیستمی)</span>
+                    </div>
+                    <div id="addTobtn" class="btn">...افزودن به</div>
+                </div>
+                <div class="modal_content">
+                    <div class="flight_car_icon"></div>
+                    <div class="travel_container">
+                        <div class="exitTime travelItems" id="exitTime_modal">11:30</div>
+                        <div class="exitPlace travelItems" id="exitPlace_modal">تهران</div>
+                        <div class="exitData_shamsi travelItems" id="exitData_shamsi_modal">دوشنبه 30 بهمن</div>
+                        <div class="exitData_miladi travelItems" id="exitData_miladi_modal">Monday 19 February</div>
+                    </div>
+                    <div class="typeStop">
+                        <div class="stopImage" id="stopImage_modal"></div>
+                        <span class="stopName" id="stopName_modal">بدون توقف</span>
+                    </div>
+                    <div class="travel_container">
+                        <div class="enterTime travelItems" id="enterTime_modal">14:00</div>
+                        <div class="enterPlace travelItems" id="enterPlace_modal">شارجه</div>
+                        <div class="enterData_shamsi travelItems" id="enterData_shamsi_modal">دوشنبه 30 بهمن</div>
+                        <div class="enterData_miladi travelItems" id="enterData_miladi_modal">Monday 19 February</div>
+                    </div>
+                    <div class="airplaneClass">
+                        <div class="allowedCargo_fly">
+                            <span id="allowedCargo_fly_baggage" class="allowedCargo_fly_items"> 30کیلو </span>
+                            <span id="allowedCargo_fly_handbag" class="allowedCargo_fly_items">7 کیلو</span>
+                        </div>
+                        <div class="flyClass" id="flyClass_modal">کلاس پرواز :</div>
+                    </div>
+                </div>
+            </div>
+            <div id="informationPrice_countainer">
+                <div class="flightInformation_part">
+                    <div class="cardInformation_image"></div>
+                    <div class="cardInformation_text">
+                        <div class="coverText">
+                            <span id="adultPerson"> نفر بزرگسال </span>
+                            <span id="adultPerson_price">9,695,680</span>
+                        </div>
+                        <div class="coverText">
+                            <span id="kidPerson">نفر کودک</span>
+                            <span id="kidPerson_price">4,847,840</span>
+                        </div>
+                        <div class="coverText">
+                            <span id="babyPerson">نفر نوزاد</span>
+                            <span id="babyPerson_price">4,847,840</span>
+                        </div>
+                        <div class="coverText">
+                            <span id="textAllprice_inModal">مبلغ</span>
+                            <span id="allPrice_inModal">14,543,521</span>
+                        </div>
+                        <div class="coverText">
+                            <span>تاریخ صدور</span>
+                            <span id="data_exportation">28 بهمن 1402</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fullPrice_part">
+                    <span>مبلغ قابل پرداخت</span>
+                    <span id="finalyPrice">14,543,521</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AnimateMenu -->
+    <div id="animate_menu">
+        <div class="animate_menu_items" id="airplane_ticket">بلیط هواپیما</div>
+        <div class="animate_menu_items" id="hotel_ticket">رزرو هتل</div>
+        <div class="animate_menu_items" id="tor_ticket">تور مسافرتی</div>
+        <div class="animate_menu_items" id="package_ticket">پکیج مسافرتی</div>
+        <div class="animate_menu_items" id="train_ticket">بلیط قطار</div>
+        <div class="animate_menu_items" id="bime_ticket">بیمه مسافرتی</div>
+    </div>
+    <!-- Animate Btn for move page -->
+    <a href="#">
+        <div id="movePage_toUp_btn"></div>
+    </a>
+    <!-- Content -->
+    <div id="content">
+        <!-- Filter -->
+        <div id="side">
+            <div class="filter">
+                <input type="checkbox" name="filter" id="ff1">
+                <label for="ff1" class="title">توقف</label>
+                <div class="framework_filter" id="stop_inFly">
+                    <div class="cover_framework_filter" id="bg_noStop">
+                        <input type="checkbox" name="framework_stopfilter" id="fs1">
+                        <label for="fs1" class="filter_items_check">بدون توقف</label>
+                    </div>
+                    <div class="cover_framework_filter" id="bg_oneStop">
+                        <input type="checkbox" name="framework_stopfilter" id="fs2">
+                        <label for="fs2" class="filter_items_check">یک توقف</label>
+                    </div>
+                    <div class="cover_framework_filter" id="bg_twoStop">
+                        <input type="checkbox" name="framework_stopfilter" id="fs3">
+                        <label for="fs3" class="filter_items_check">دو توقف</label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter">
+                <input type="checkbox" name="filter" id="ff2">
+                <label for="ff2" class="title">کلاس پروازی</label>
+                <div class="framework_filter" id="classFly">
+                    <!-- cf == classFly -->
+                    <input type="checkbox" name="class_fliter" id="economy_input">
+                    <label for="economy_input" class="style_filter_inSide" id="economy_class">
+                        <div class="name_filter_box">اکونومی کلاس</div>
+                    </label>
+                    <input type="checkbox" name="class_fliter" id="business_input">
+                    <label for="business_input" class="style_filter_inSide" id="business_class">
+                        <div class="name_filter_box">بیزینس کلاس</div>
+                    </label>
+                    <input type="checkbox" name="class_fliter" id="first_input">
+                    <label for="first_input" class="style_filter_inSide" id="first_class">
+                        <div class="name_filter_box">فرست کلاس</div>
+                    </label>
+                </div>
+            </div>
+            <div class="filter">
+                <input type="checkbox" name="filter" id="ff3">
+                <label for="ff3" class="title">نوع بلیط </label>
+                <div class="framework_filter" id="typeTicket_fly">
+                    <!-- tt == type ticket -->
+                    <input type="checkbox" name="class_fliter" id="charter_input">
+                    <label for="charter_input" class="style_filter_inSide" id="charter_class">
+                        <div class="name_filter_box">چارتر</div>
+                    </label>
+                    <input type="checkbox" name="class_fliter" id="systemy_input">
+                    <label for="systemy_input" class="style_filter_inSide" id="systemy_class">
+                        <div class="name_filter_box">سیستمی</div>
+                    </label>
+                </div>
+            </div>
+            <div class="filter">
+                <input type="checkbox" name="filter" id="ff4">
+                <label for="ff4" class="title">ساعت حرکت </label>
+                <div class="framework_filter" id="moveTime_fly">
+                    <input type="checkbox" name="class_fliter" id="midnight_input">
+                    <label for="midnight_input" class="style_filter_inSide" id="midnight_class">
+                        <div class="name_filter_box">بامداد</div>
+                        <div class="time_box">(۰۰:۰۰ - ۰۶:۰۰)</div>
+                    </label>
+                    <input type="checkbox" name="class_fliter" id="mornning_input">
+                    <label for="mornning_input" class="style_filter_inSide" id="mornning_class">
+                        <div class="name_filter_box">صبح</div>
+                        <div class="time_box">(۰۶:۰۰ - ۱۲:۰۰)</div>
+                    </label>
+                    <input type="checkbox" name="class_fliter" id="afternoon_input">
+                    <label for="afternoon_input" class="style_filter_inSide" id="afternoon_class">
+                        <div class="name_filter_box">بعدازظهر</div>
+                        <div class="time_box">(۱۲:۰۰ - ۱۸:۰۰)</div>
+                    </label>
+                    <input type="checkbox" name="class_fliter" id="night_input">
+                    <label for="night_input" class="style_filter_inSide" id="night_class">
+                        <div class="name_filter_box">شب</div>
+                        <div class="time_box">(۱۸:۰۰ - ۲۴:۰۰)</div>
+                    </label>
+                </div>
+            </div>
+            <div class="filter">
+                <input type="checkbox" name="filter" id="ff5">
+                <label for="ff5" class="title">شرکت های هواپیمایی</label>
+                <div class="framework_filter" id="airplane_companys">
+                    <!-- nc == name company -->
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc1">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/alemarat_logo.webp"></div>
+                        <label for="nc1" class="filter_items_check">الامارات</label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>42,068,450</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc2">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/mahanair_logo.webp"></div>
+                        <label for="nc2" class="filter_items_check">ماهان ایر </label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>51,232,100</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc3">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/ghatarair_logo.webp"></div>
+                        <label for="nc3" class="filter_items_check">قطر ایر ویز </label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>73,575,923</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc4">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/terkish_logo.webp"></div>
+                        <label for="nc4" class="filter_items_check">ترکیش</label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>78,474,603</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc5">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/flydobai_logo.webp"></div>
+                        <label for="nc6" class="filter_items_check">فلای دبی</label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>81,269,838</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc6">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/golfair_logo.webp"></div>
+                        <label for="nc6" class="filter_items_check">گلف ایر </label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>85,949,272</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc7">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/pegasos_logo.webp"></div>
+                        <label for="nc7" class="filter_items_check">پگاسوس</label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>111,176,877</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                    <div class="cover_framework_filter" id="">
+                        <input type="checkbox" name="framework_stopfilter" id="nc8">
+                        <div class="company_logo"><img src="images/icon/airplane_logos/aseman_logo.webp"></div>
+                        <label for="nc8" class="filter_items_check">آسمان </label>
+                        <span class="company_price">
+                            <span>از</span>
+                            <strong>516,656,750</strong>
+                            <span>تومان</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- AD -->
+            <div class="ad">
+                <img src="images/ad/banner1.avif">
+            </div>
+            <div class="ad">
+                <img src="images/ad/banner2s.avif">
+            </div>
+        </div>
+        <div id="main">
+            <!-- SearchPart -->
+            <div id="searchBox">
+                <div class="filter_in_search">
+                    <div id="passengers_toolbar">
+                        <span id="passengers_toolbar_text">1 مسافر</span>
+                        <ul id="passengers_toolbar_containerMenu">
+                            <li class="containerMenu_items">
+                                <span>بزرگسال</span>
+                                <div class="rangeSet">
+                                    <div class="ChangeCounter" id="increaseCounter_num1">+</div>
+                                    <div class="passengerValue" id="passengerValueCounter_num1">1</div>
+                                    <div class="ChangeCounter" id="decreaseCounter_num1">-</div>
+                                </div>
+                            </li>
+                            <li class="containerMenu_items">
+                                <span>کودک</span>
+                                <div class="rangeSet">
+                                    <div class="ChangeCounter" id="increaseCounter_num2">+</div>
+                                    <div class="passengerValue" id="passengerValueCounter_num2">0</div>
+                                    <div class="ChangeCounter" id="decreaseCounter_num2">-</div>
+                                </div>
+                            </li>
+                            <li class="containerMenu_items">
+                                <span>نوزاد</span>
+                                <div class="rangeSet">
+                                    <div class="ChangeCounter" id="increaseCounter_num3">+</div>
+                                    <div class="passengerValue" id="passengerValueCounter_num3">0</div>
+                                    <div class="ChangeCounter" id="decreaseCounter_num3">-</div>
+                                </div>
+                            </li>
+                            <li class="containerMenu_items" id="textWarn"></li>
+                        </ul>
+                        <div id="CancelBtn_passengerToolbar" class="btnStyle">لغو</div>
+                        <div id="registrationBtn_passengerToolbar" class="btnStyle">تایید</div>
+                    </div>
+                    <div id="way_toolbar">
+                        <span id="way_toolbar_text">رفت و برگشت</span>
+                        <div class="searchToolbar_containerMenu" id="way_toolbar_containerMenu">
+                            <!-- WayToolbarMenuItems => wmi -->
+                            <input type="radio" name="way_toolbar_menuItems" id="wmi1">
+                            <label for="wmi1" id="wmi1_text">یک طرفه</label>
+                            <input type="radio" name="way_toolbar_menuItems" id="wmi2" checked>
+                            <label for="wmi2" id="wmi2_text">رفت و برگشت</label>
+                            <input type="radio" name="way_toolbar_menuItems" id="wmi3">
+                            <label for="wmi3" id="wmi3_text">چند مسیری</label>
+                        </div>
+                    </div>
+                    <div id="classOffly_toolbar">
+                        <span id="classOffly_toolbar_text">بیزینس کلاس</span>
+                        <div class="searchToolbar_containerMenu" id="classOffly_toolbar_containerMenu">
+                            <!-- ClassOfFlyMenuItems => cmi -->
+                            <input type="radio" name="classOffly_menuItems" id="cmi1">
+                            <label for="cmi1" id="cmi1_text">اکونومی کلاس</label>
+                            <input type="radio" name="classOffly_menuItems" id="cmi2" checked>
+                            <label for="cmi2" id="cmi2_text">بیزینس کلاس</label>
+                            <input type="radio" name="classOffly_menuItems" id="cmi3">
+                            <label for="cmi3" id="cmi3_text">فرست کلاس</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_search" id="mainSearch_toolbar">
+                    <div id="chooseCity">
+                        <div id="firstCity" class="nameBox_chooseCity">
+                            <span id="defaultValue_firstCity">شهر یا فرودگاه مبدا ؟</span>
+                            <span id="firstCity_value"></span>
+                            <div class="createIcon" id="lineRight_icon"></div>
+                        </div>
+                        <div id="lastCity" class="nameBox_chooseCity">
+                            <span id="defaultValue_lastCity">شهر یا فرودگاه مقصد ؟</span>
+                            <span id="lastCity_value"></span>
+                            <div class="createIcon" id="lineLeft_icon"></div>
+                        </div>
+                        <div id="reversCity_btn"></div>
+                    </div>
+                    <div id="searchBtn"><span id="rotateSearchbtn">جستجو</span></div>
+                    <div id="searchBoxmenu">
+                        <div class="componet_search">
+                            <input type="text" name="searched" id="searhBoxinput" placeholder="شهر یا فرودگاه مبدا ؟">
+                            <div id="back_searchBtn"></div>
+                            <div id="delete_searchBtn"></div>
+                        </div>
+                        <ul class="componet_menu" id="menu_container"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sort_box" id="sortBox_container">
+                <div class="sortItems" id="sortTitle">مرتب سازی بر اساس :</div>
+                <input type="radio" name="sort" id="sort_default_ticket_input">
+                <label for="sort_default_ticket_input" class="sortItems" id="sort_default_ticket">پیش فرض
+                    <div class="sortIcon" id="sort_default_icon"></div>
+                </label>
+                <input type="radio" name="sort" id="sort_price_ticket_input">
+                <label for="sort_price_ticket_input" class="sortItems" id="sort_price_ticket">
+                    <span id="sortPrice_text">ارزان ترین</span>
+                    <div class="sortIcon" id="sort_price_icon"></div>
+                </label>
+                <input type="radio" name="sort" id="sort_time_ticket_input">
+                <label for="sort_time_ticket_input" class="sortItems" id="sort_time_ticket">ساعت پرواز
+                    <div class="sortIcon" id="sort_time_icon"></div>
+                </label>
+                <input type="radio" name="sort" id="sort_stop_ticket_input">
+                <label for="sort_stop_ticket_input" class="sortItems" id="sort_stop_ticket" style="border: none;">توقف
+                    <div class="sortIcon" id="sort_stop_icon"></div>
+                </label>
+            </div>
+            <!-- slider -->
+            <div id="ticketSlider">
+                <div id="container_ticketSlider">
+                    <div class="ticketplaneSlider_items">
+                        <div class="date_move">دوشنبه، 13 فروردین</div>
+                        <div class="priceTicket">4,208,207 تومان</div>
+                    </div>
+                </div>
+                <button id="ticketSlider_arrow_next" class="ticketSlider_arrow"></button>
+                <button id="ticketSlider_arrow_prev" class="ticketSlider_arrow"></button>
+            </div>
+            <!-- ticket -->
+            <div id="chepsetPrice">ارزان ترین</div>
+            <div id="dish"></div>
+            <div id="noResultFound">
+                <h1 class="des_noResult">با توجه به فیلترهای انتخابی، نتیجه ای یافت نشد</h1>
+                <div id="removeFilters_btn">حذف همه فیلترها</div>
+            </div>
+            <div id="noResult_bySearch">
+                <h1>متاسفیم، برای جستجوی شما نتیجه ای یافت نشد</h1>
+                <h2>برای راهنمایی و کسب اطلاع بیشتر می توانید با شماره 021 8540 تماس حاصل فرمایید</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div id="footer_container">
+            <div id="singIn_footer">
+                <div class="singIn_items">
+                    <img src="images/icon/footer_singIn_num1.png">
+                </div>
+                <div class="singIn_items">
+                    <img src="images/icon/footer_singIn_num2.png">
+                </div>
+                <div class="singIn_items">
+                    <img src="images/icon/footer_singIn_num3.png">
+                </div>
+                <div class="singIn_items">
+                    <img src="images/icon/footer_singIn_num4.png">
+                </div>
+                <div class="singIn_items">
+                    <img src="images/icon/footer_singIn_num5.png">
+                </div>
+            </div>
+            <div class="footer_description">
+                الی گشت با ارائه بهترین و با کیفیت ترین خدمات گردشگری به صورت آنلاین می کوشد تا به عنوان معتبرترین شرکت
+                گردشگری در ایران، تجربه ی لذت بخش یک رزرو اینترنتی را برایتان تداعی کند. شما در هر کجای دنیا که باشید،
+                در هر
+                ساعت از شبانه روز می توانید از طریق سایت الی گشت بلیط هواپیما، بلیط چارتر، رزرو هتل ارزان قیمت، تورهای
+                مسافرتی و تور لحظه آخری را با پایین ترین نرخ ها انتخاب کنید. همراه الی گشت با اطمینان از انتخابتان، قدم
+                در
+                مسیر فراموش نشدنی سفرتان بگذارید
+            </div>
+            <div class="socialMedias">
+                <div class="socialMedias_items"></div>
+                <div class="socialMedias_items"></div>
+                <div class="socialMedias_items"></div>
+                <div class="socialMedias_items"></div>
+            </div>
+            <div class="aboutMenu">
+                <div class="aboutMenu_items">درباره ما</div>
+                <div class="aboutMenu_items">تماس با ما</div>
+                <div class="aboutMenu_items">قوانین و مقررات</div>
+                <div class="aboutMenu_items">راهنمای خرید</div>
+                <div class="aboutMenu_items">سوالات متداول</div>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="js/slider/slider_airplaneTicket_js.js"></script>
+    <script src="js/menu_in_header_script/menu_in_header.js"></script>
+    <script src="js/searchBox_script/searchBox.js"></script>
+    <script src="js/sort_script/sort.js"></script>
+    <script src="js/ticket_airplane_script/airplaneTicket.js"></script>
+    <script src="js/followUp_modal_script/followUpmodal.js"></script>
+    <script src="js/logIn_modal_script/logInmodal.js"></script>
+    <script src="js/modal_script/modal.js"></script>
+    <script src="js/NoResulteFound_script/noResultfound.js"></script>
+    <script src="js/animateMenu_script/animateMenu.js"></script>
+    <script src="js/information_modal_script/information_modal.js"></script>
+    <script src="js/myTicket_script/myTicket.js"></script>
+    <script src="js/darkMood/darkMood.js"></script>
+</body>
+</html>

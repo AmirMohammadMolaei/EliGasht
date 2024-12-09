@@ -1,0 +1,68 @@
+#ticketSlider {
+    height: 72px;
+    padding: 0 30px;
+    margin: 11px 0;
+    position: relative;
+    overflow: hidden;
+    direction: ltr;
+}
+#ticketSlider>#container_ticketSlider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+    position: relative;
+    transition: 0.5s;
+    left: -100%;
+}
+#ticketSlider>#container_ticketSlider>.ticketplaneSlider_items {
+    min-width: 150px;
+    max-width: 150px;
+    height: 58px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    color: #002040;
+    cursor: pointer;
+}
+#ticketSlider>#container_ticketSlider>.ticketplaneSlider_items>.date_move {
+    width: 100%;
+    height: 23px;
+    margin-bottom: 5px;
+}
+#ticketSlider>#container_ticketSlider>.ticketplaneSlider_items>.priceTicket {
+    width: 100%;
+    height: 23px;
+    margin-bottom: 15px;
+    border-top: 1px solid #002040;
+}
+#ticketSlider>.ticketSlider_arrow {
+    position: absolute;
+    width: 28px;
+    height: 100%;
+    padding: 1px 4px;
+    top: 0;
+    background-color: #fcfcfc;
+    cursor: pointer;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+#ticketSlider>#ticketSlider_arrow_next {
+    right: 0;
+    border-radius: 0 8px 8px 0;
+    background-image: url(../../images/icon/slider_arrow_next.png);
+}
+#ticketSlider>#ticketSlider_arrow_prev {
+    left: 0;
+    border-radius: 8px 0 0 8px;
+    background-image: url(../../images/icon/slider_arrow_prev.png);
+}

@@ -1,0 +1,290 @@
+/* #modalCover_information.modalCover{opacity: 1; visibility: visible;} */
+#modalCover_information > #closeBtn_informationFly{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 150px auto 0;
+    background-color: #fff;
+    background-image: url(../../images/icon/close_icon.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;  
+}
+#modalCover_information > #closeBtn_informationFly:hover{background-color: #e8f0fe; cursor: pointer;}
+#modalCover_information > .informationCountainer{
+    max-width: 1300px;
+    height: 411px;
+    margin: 30px auto; 
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: start;
+}
+#modalCover_information > .informationCountainer > #modal_information{
+    width: 75%;
+    height: 261px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_header{
+    width: 935px;
+    height: 54px;
+    padding: 20px 30px 30px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_header > .title{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    column-gap: 20px;
+    cursor: default;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_header > .title > .logoAirplane{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../images/icon/airplane_logos/airarabic_logo.webp);
+}
+@font-face {
+    font-family: Roya;
+    src: url(../../fonts/Roya.ttf);
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_header > .title > .nameAirplane{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roya;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_header > .btn{
+    width: 78px;
+    height: 36px;
+    color: #fff;
+    background-color: #005792;
+    text-align: center;
+    line-height: 36px; 
+    margin-left: 20px;
+    padding: 0 37px;
+    transition: 0.3s;
+    border-radius: 6px;
+    font-size: 20px;
+    direction: ltr;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_header > .btn:hover{background-color: #ff5e3a; cursor: pointer;}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content{
+    width: 94%;
+    height: 136px;
+    padding: 30px 30px 0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .flight_car_icon{
+    width: 22px;
+    height: 33px;
+    background-image: url(../../images/icon/iconAirplane.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 33px;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .travel_container{
+    width: 175px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+@font-face {
+    font-family: Roya;
+    src: url(../../fonts/Roya.ttf);
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .travel_container > .travelItems{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .travel_container > .exitTime,
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .travel_container > .enterTime,
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .travel_container > .exitData_shamsi,
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .travel_container > .enterData_shamsi{font-family: Roya;}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .typeStop{
+    width: 215px;
+    height: 53px;
+    margin-top: 15px;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .typeStop > .stopImage{
+    width: 100%;
+    height: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../images/icon/stops_Icon/no_stop_inFly_rangi.png);
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .typeStop > .stopName{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: block;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .airplaneClass{
+    width: 170px;
+    height: 136px;
+    margin-right: 100px;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .airplaneClass > .allowedCargo_fly{
+    width: 100%;
+    height: 82px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    flex-flow: row wrap;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .airplaneClass > .allowedCargo_fly > .allowedCargo_fly_items{
+    width: 68px;
+    height: 33px;
+    padding: 0 8px 0 17px;
+    margin-bottom: 12px;
+    background-color: #f5f7f9;
+    border-radius: 12px;
+    border: 1px solid #e8edf1;
+    color: #252a31;
+    text-align: center;
+    line-height: 33px;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .airplaneClass > .allowedCargo_fly > #allowedCargo_fly_baggage{
+    background-image: url(../../images/icon/baggage_icon.png);
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .airplaneClass > .allowedCargo_fly > #allowedCargo_fly_handbag{
+    background-image: url(../../images/icon/handbag_icon.png);
+}
+#modalCover_information > .informationCountainer > #modal_information > .modal_content > .airplaneClass > .flyClass{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#modalCover_information > .informationCountainer > #informationPrice_countainer{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Roya;
+}
+#modalCover_information > .informationCountainer > #informationPrice_countainer > .flightInformation_part{
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#modalCover_information > .informationCountainer > #informationPrice_countainer > .flightInformation_part > .cardInformation_image{
+    width: 100%;
+    height: 115px;
+    background-image: url(../../images/icon/flight1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+#modalCover_information > .informationCountainer > #informationPrice_countainer > .flightInformation_part > .cardInformation_text{
+    width: 100%;
+    height: 162px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#modalCover_information > .informationCountainer > #informationPrice_countainer > .flightInformation_part > .cardInformation_text > .coverText{
+    width: 100%;
+    height: 36px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#modalCover_information > .informationCountainer > #informationPrice_countainer > .fullPrice_part{
+    width: 100%;
+    height: 15%;
+    padding: 0 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#textAllprice_inModal{margin-right: 5px;}
+
+/* warn */
+#textWarn_ticket{
+    width: 300px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    position: absolute;
+    top: -180px;
+    display: none;
+    z-index: 1000;
+}
+#textWarn_ticket > span{color: red;}
+
+        /* Responsive */
+
+@media screen and (max-width:900px) {
+    #modalCover_information > .informationCountainer {
+        height: auto;
+        flex-flow: row wrap;
+    }
+    #modalCover_information > .informationCountainer > #modal_information {width: 90%;}
+    #modalCover_information > .informationCountainer > #informationPrice_countainer {
+        width: 90%; 
+        margin-top: 5px;
+        row-gap: 5px;
+    }
+    #modalCover_information > #closeBtn_informationFly {
+        margin: 0;
+        position: absolute;
+        left: 20px;
+        z-index: 100;
+    }
+    #textWarn_ticket{top: 0px;}
+}
+@media screen and (max-width:560px) {
+    #modalCover_information > .informationCountainer > #modal_information > .modal_content > .airplaneClass {margin-right: 10px;}
+    #modalCover_information > .informationCountainer > #modal_information > .modal_header > .btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+}

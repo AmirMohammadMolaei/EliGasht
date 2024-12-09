@@ -1,0 +1,48 @@
+#content{
+    max-width: 1330px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 0 10px;
+}
+#content > #main{width: 75%;}
+#content > #main > #chepsetPrice{
+    width: 100%;
+    height: 47px;
+    color: #02122c;
+    background-color: #d0eeec;
+    line-height: 47px;
+    text-indent: 60px;
+    font-size: 24px;
+    position: relative;
+    top: 5px;
+    z-index: 100;
+    font-weight: bold;
+    font-family: Mitra;
+    background-image: url(../../images/icon/money_icon.png);
+    background-position: 99% 50%;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+#content > #side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    row-gap: 15px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 730px) {
+    #content{flex-flow: row wrap;}
+    #content > #side{width: 90%;}
+    #content > #main{width: 100%;}
+    #content > #side > .ad{display: none;}
+    #content > #side > .filter > .framework_filter > .style_filter_inSide > .name_filter_box{font-size: 20px;}
+    #content > #side > .filter > .title {font-size: 25px;}
+}

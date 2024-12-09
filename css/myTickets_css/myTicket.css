@@ -1,0 +1,199 @@
+/* #myTicket_modal_cover.modalCover{opacity: 1; visibility: visible;} */
+#myTicket_modal_cover > #myTicket_modal{
+    max-width: 1300px;
+    height: 650px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+#myTicket_modal_cover > #myTicket_modal > .hearder_modal{
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: right;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#myTicket_modal_cover > #myTicket_modal > .hearder_modal > #closeBtn_myTicket_modal{
+    width: 40px;
+    height: 40px;
+    background-image: url(../../images/icon/close_icon.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+#myTicket_modal_cover > #myTicket_modal > .content_modal{
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#myTicket_modal_cover > #myTicket_modal > .content_modal > .search_modal{
+    height: 80px;
+    width: 95%;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myTicket_modal_cover > #myTicket_modal > .content_modal > #holder_modal{
+    height: calc(100% - 150px);
+    width: 95%;
+    background-color: #ebecf0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px 0;
+    overflow-y: auto;
+    direction: ltr;
+}
+#myTicket_modal_cover > #myTicket_modal > .content_modal > #holder_modal > .itemHolder{
+    width: 555px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    overflow: hidden;
+    direction: rtl;
+}
+#holder_modal > .itemHolder > .typeFlight{
+    width: 100%;
+    height: 30px;
+    background-color: #ff5e3a;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+#holder_modal > .itemHolder > .resultFlight_holder{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .company{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .company > .logo{
+    width: 50px;
+    height: 50px;
+    background-image: url(../../images/icon/airplane_logos/flydobai_logo.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50px;
+    margin-top: 5px;
+    box-shadow: -1px 1px 4px #0000005b;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .go{
+    width: 120px;
+    height: 100%;
+    text-align: center;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .go > .timeGo{
+    width: 100%;
+    font-size: 20px;
+    font-family: Roya;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .go > .placeGo{
+    width: 100%;
+    font-size: 16px;
+    color: rgb(51, 49, 49);
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .date{
+    width: 170px;
+    height: 30px;
+    margin-top: 5px;
+    line-height: 30px;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .come{
+    width: 120px;
+    height: 100%;
+    text-align: center;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .come > .timeCome{
+    width: 100%;
+    font-size: 20px;
+    font-family: Roya;
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .come > .placeCome{
+    width: 100%;
+    font-size: 16px;
+    color: rgb(51, 49, 49);
+}
+#holder_modal > .itemHolder > .resultFlight_holder > .quantity{
+    width: 60px;
+    height: 80%;
+    line-height: 80px;
+    font-size: 22px;
+    font-family: Roya;
+    border-right: 1px solid #ccc;
+}
+#holder_modal > .itemHolder > .footerItem{
+    width: 100%;
+    height: calc(100% - 110px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+#holder_modal > .itemHolder > .footerItem > .price{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-family: Roya;
+    font-size: 20px;
+}
+#holder_modal > .itemHolder > .footerItem > .delete{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+#holder_modal > .itemHolder > .footerItem > .delete:hover{background-color: rgba(241, 142, 142, 0.694); cursor: pointer;}
+#searchIn_myticketModal{
+    width: 100%;
+    height: 50%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    padding: 5px 25px 5px 50px;
+    font-size: 20px;
+    font-family: Roya;
+    background-image: url(../../images/icon/searchIcon_light.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    background-color: #414141;
+    color: #fff;
+}
+
+/* Responsive */
+
+@media screen and (max-width:790px) {
+    
+}

@@ -1,0 +1,234 @@
+#content > #main > #dish .tickets_container{
+    /* height: 180px; for responsive */
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    cursor: pointer;
+    overflow: hidden;
+    color: #212529;
+}
+#content > #main > #dish .tickets_container > .result_flight{
+    width: 100%;
+    height: 113px;
+    position: relative;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_type{
+    width: 133px;
+    height: 34px;
+    background-color: #005792;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -48px;
+    top: 47px;
+    padding: 0 0 4px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 34px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_logo{
+    width: 17%;
+    height: 75px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_logo > .logo{
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    box-shadow: -1px 1px 4px #0000005b;
+    background-image: url(../../images/icon/airplane_logos/airarabic_logo.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_logo > span{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route{
+    width: 48%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .exit_of{width: 33%;}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .exit_of > .exit_time{
+    font-family: Mitra;
+    width: 100%;
+    height: 50%;
+    display: block;
+    text-align: center;
+    font-size: 28px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .exit_of > .exit_place{
+    width: 100%; 
+    height: 50%;
+    display: block;
+    text-align: center;
+    color: #757575;
+    font-size: 19px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .result_flight_route_into{
+    width: 33%;
+    background-image: url(../../images/icon/stops_Icon/no_stop_inFly.png);
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .enter_to{width: 33%;}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .enter_to > .enter_time{
+    font-family: Mitra;
+    width: 100%;
+    height: 50%;
+    display: block;
+    text-align: center;
+    font-size: 28px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .enter_to > .enter_place{
+    width: 100%; 
+    height: 50%;
+    display: block;
+    text-align: center;
+    color: #757575;
+    font-size: 19px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage{
+    width: 15%;
+    height: 75px;
+    border-left: 1px solid #dadce0;
+    padding-left: 5px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage > .baggage_allowance,
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage > .handbag_allowance{
+    font-family: Mitra;
+    width: 60%;
+    padding: 7px 8px 7px 17px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid #e8edf1;
+    background-color: #52565814;
+    font-size: 22px;
+    line-height: 18px;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage > .baggage_allowance{
+    background-image: url(../../images/icon/baggage_icon.png);
+    background-size: 12px;
+    text-indent: 17px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage > .handbag_allowance{
+    background-image: url(../../images/icon/handbag_icon.png);
+    background-size: 11px;
+    text-indent: 25px;
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_details{
+    width: 17%;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 28px;
+    color: #2681ff;
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-image: url(../../images/icon/arrow_down_icon.png);
+}
+#content > #main > #dish .tickets_container > .result_flight > .result_flight_details:hover{
+    background-color: #f5f7f9;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#content > #main > #dish .tickets_container > .airplanes_type{
+    width: 100%;
+    /* height: 47px; for responsive */
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    font-family: Mitra;
+    border-top: 1px solid #dadce0;
+}
+#content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    line-height: 47px;
+    font-size: 20px;
+}
+#content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter > .flyNumber{
+    width: 100px;
+    height: 100%;
+    margin-left: 30px;
+}
+#content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter > .remaining_seats{
+    width: 120px;
+    height: 100%;
+    margin-left: 30px;
+}
+#content > #main > #dish .tickets_container > .airplanes_type > .price_ticket_airplane{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    line-height: 47px;
+    font-size: 25px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1240px) {
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_details {background-position: 0% 50%;}
+}
+@media screen and (max-width: 1018px) {
+    #content > #main > #dish .tickets_container > .result_flight{height: 150px;}
+    #content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter {align-items: center;}
+    #content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter > .flyNumber {height: auto;}
+    #content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter > .remaining_seats {height: auto;}
+}
+@media screen and (max-width: 680px) {
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_type {
+        width: 100%;
+        top: 0;
+        right: 0;
+        transform: rotate(0deg);
+    }
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_details {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        background-position: 30% 50%;
+        margin: 0;
+    }
+    #content > #main > #dish .tickets_container > .result_flight {padding-bottom: 50px;}
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage {width: 30%; border: none;}
+}
+@media screen and (max-width: 560px) {
+    #content > #main > #dish .tickets_container > .airplanes_type > .price_ticket_airplane {font-size: 20px;}
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .exit_of > .exit_time {font-size: 22px;}
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .exit_of > .exit_place {font-size: 16px;}
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .enter_to > .enter_time {font-size: 22px;}
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_route > .enter_to > .enter_place {font-size: 16px;}
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_details {font-size: 22px; }
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage > .baggage_allowance {font-size: 16px;}
+    #content > #main > #dish .tickets_container > .result_flight > .result_flight_baggage > .handbag_allowance {font-size: 16px;}
+    #content > #main > #dish .tickets_container > .result_flight {padding: 10px 0 50px;}
+}
+@media screen and (max-width:484px) {
+    #content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter {font-size: 16px;}
+    #content > #main > #dish .tickets_container > .airplanes_type > .information_fly_inFooter {flex-flow: row wrap; width: 45%;}
+    #content > #main > #dish .tickets_container > .airplanes_type > .price_ticket_airplane {width: 50%;}
+}

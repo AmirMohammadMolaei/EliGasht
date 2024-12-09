@@ -1,0 +1,94 @@
+#header{
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+.header_boxShadow{
+    box-shadow: 0 1px 3px #272727;
+}
+#header > .partRight{
+    height: 48px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+#header > .partRight > #showMenu_header{
+    width: 43px;
+    height: 25px;
+    background-image: url(../../images/icon/menu_icon.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+#header > .partRight > .logo{
+    width: 84px;
+    height: 100%;
+}
+#header > .partRight > .logo > img{width: 100%; height: 100%;}
+#header > .partLeft{
+    width: 350px;
+    height: 31px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#header > .partLeft > #followUp,
+#header > .partLeft > #logIn,
+#header > .partLeft > #myTicket{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 21px;
+    text-indent: 30px;
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+}
+#header > .partLeft > #followUp{
+    width: 113px;
+    height: 28px;
+    background-image: url(../../images/icon/followUp_cover.png);
+    background-size: 20px;
+}
+#header > .partLeft > #logIn{
+    width: 56px;
+    height: 28px;
+    background-image: url(../../images/icon/logIn_cover.png);
+    background-size: 24px;
+}
+#header > .partLeft > #myTicket{
+    width: 120px;
+    height: 28px;
+    background-image: url(../../images/icon/myTickets_icon.png);
+    background-size: 24px;
+    position: relative;
+}
+#header > .partLeft > #myTicket > #newAddticket{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+    background-color: red;
+    display: none;
+}
+#header > .partLeft > #followUp:hover,
+#header > .partLeft > #logIn:hover,
+#header > .partLeft > #myTicket:hover{background-color: #e8f0fe;}
+.fixedElement_header{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+@media screen and (max-width:610px) {
+    #header{height: auto; flex-flow: row wrap;}
+    #header > .partLeft {margin: 0; width: 100%; height: 45px;}
+    #header > .partRight {margin: 0; column-gap: 5px; width: 100%; justify-content: space-around;}
+}

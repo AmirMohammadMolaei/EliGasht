@@ -1,0 +1,5 @@
+#content > #side > .ad{
+    width: 100%;
+    height: 860px;
+}
+#content > #side > .ad > img{width: 100%; height: 100%;}

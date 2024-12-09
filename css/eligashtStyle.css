@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    background-color: #ebecf0;
+    direction: rtl;
+    font-family: Nasim;
+    color: #212529;
+}
+::selection{background-color: transparent;}
+@font-face {
+    font-family: Nasim;
+    src: url(../fonts/nasim.ttf);
+}
+@font-face {
+    font-family: Mitra;
+    src: url(../fonts/Mitra.ttf);
+}
